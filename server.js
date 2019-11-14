@@ -6,10 +6,11 @@ const nodemailer = require("nodemailer");
 const details = require("./details.json");
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("The server started on port 3000 !!!!!!");
 });
 
