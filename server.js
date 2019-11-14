@@ -42,11 +42,14 @@ async function sendMail(user, callback) {
     });
 
     let mailOptions = {
-        from: '"Fun Of Heuristic"<example.gimail.com>', // sender address
+        from: `${user.emailaddress}`, // sender address
         to: 'tisaaaful@gmail.com', // list of receivers
-        subject: user.message, // Subject line
-        html: `<h1>Hi ${user.name}</h1><br>
-    <h4>Thanks for joining us</h4>`
+        subject: `${user.subject}`, // Subject line
+        html: `<h1>${user.subject}</h1>
+                <h3>${user.emailaddress}</h3>
+                <h4>${user.name}</h4>
+<br>
+              <h4>${user.message}</h4>`
     };
 
     // send mail with defined transport object
