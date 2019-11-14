@@ -46,8 +46,8 @@ async function sendMail(user, callback) {
         to: 'tisaaaful@gmail.com', // list of receivers
         subject: `${user.subject}`, // Subject line
         html: `<h1>${user.subject}</h1>
-                <h3>${user.emailaddress}</h3>
-                <h4>${user.name}</h4>
+            
+       
 <br>
               <h4>${user.message}</h4>`
     };
