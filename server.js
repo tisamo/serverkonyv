@@ -16,7 +16,7 @@ app.listen(PORT, () => {
 
 app.get("/", (req, res) => {
     res.send(
-    "<h1 style='text-align: center'>Wellcome to FunOfHeuristic <br><br>😃👻😃👻😃👻😃👻😃</h1>"
+    "<h1 style='text-align: center'>zsááááááááááááááááááááááác <br><br>😃👻😃👻😃👻😃👻😃</h1>"
 );
 });
 
